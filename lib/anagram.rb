@@ -11,6 +11,7 @@ end
 def match(possible_anagrams)
   possible_anagrams.select do |maybe_anagram|
     @word.split("").sort == maybe_anagram.split("").sort
+    binding.pry
   end
 end
 
